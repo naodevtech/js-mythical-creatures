@@ -1,4 +1,4 @@
-const assert = require('chai').assert;
+ const assert = require('chai').assert;
 const Unicorn = require('./unicorn');
 
 describe('Unicorn', function() {

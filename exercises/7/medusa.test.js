@@ -4,17 +4,17 @@ const Person = require('./person');
 
 describe('Medusa', function() {
 
-  it.skip('should instantiate our good friend, Medusa', function() {
+  it('should instantiate our good friend, Medusa', function() {
     const medusa = new Medusa();
     assert.isObject(medusa);
   });
 
-  it.skip('should have a name', function() {
+  it('should have a name', function() {
     const medusa = new Medusa('Bree');
     assert.equal(medusa.name, 'Bree');
   });
 
-  it.skip('should start with no statues', function() {
+  it('should start with no statues', function() {
     const medusa = new Medusa('Taytay');
     assert.equal(medusa.name, 'Taytay');
     assert.deepEqual(medusa.statues, []);
@@ -22,7 +22,7 @@ describe('Medusa', function() {
 
   // Pass first 3 tests for Person down below
 
-  it.skip('should gain a statue when staring at a person', function() {
+  it('should gain a statue when staring at a person', function() {
     const medusa = new Medusa('Brenna');
     const victim = new Person('Jhun');
 
@@ -33,7 +33,7 @@ describe('Medusa', function() {
 
   });
 
-  it.skip('should only be able to have three victims as a statue', function() {
+  it('should only be able to have three victims as a statue', function() {
     const medusa = new Medusa('Meeka');
     const victim1 = new Person('Lousia');
     const victim2 = new Person('Bree');
@@ -68,21 +68,21 @@ describe('Medusa', function() {
 
 describe('Person', function() {
 
-  it.skip('should be a function', function() {
+  it('should be a function', function() {
     assert.isFunction(Person);
   });
 
-  it.skip('should instantiate our good friend, Person', function() {
+  it('should instantiate our good friend, Person', function() {
     const person = new Person();
     assert.isObject(person);
   });
 
-  it.skip('should have a name', function() {
+  it('should have a name', function() {
     const person = new Person('Steve');
     assert.equal(person.name, 'Steve');
   });
 
-  it.skip('should be stoned after looking into Medusas eyes', function() {
+  it('should be stoned after looking into Medusas eyes', function() {
     const medusa = new Medusa('Brenna');
     const victim = new Person('Jhun');
 
